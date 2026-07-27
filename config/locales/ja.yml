@@ -1,0 +1,19 @@
+ja:
+  helper:
+    title: "Ruby on Railsチュートリアルサンプルアプリ"
+  layouts:
+    header:
+      sample_app: "サンプルアプリ"
+      home: "ホーム"
+      help: "ヘルプ"
+      log_in: "ログイン"
+  static_pages:
+    home:
+      title: "ホーム"
+      welcome: "サンプルアプリ"
+      text_home: '<a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>サンプルアプリケーションのホームページです。'
+      sign_up: "今すぐ登録！"
+    help:
+      title: "ヘルプ"
+      text_help_1: 'Ruby on Rails Tutorialについてのヘルプは<a href="http://www.railstutorial.org/help">Rails Tutorial ヘルプページ</a>をご覧ください。'
+      text_help_2: 'このサンプルアプリについてのヘルプは<a href="http://www.railstutorial.org/book">Ruby on Rails Tutorial 本</a>をご覧ください。'

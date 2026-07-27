@@ -1,0 +1,19 @@
+vi:
+  helper:
+    title: "Ruby on Rails Tutorial Ứng dụng mẫu"
+  layouts:
+    header:
+      sample_app: "ứng dụng mẫu"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      log_in: "Đăng nhập"
+  static_pages:
+    home:
+      title: "Trang Chủ"
+      welcome: "Chào mừng đến với Ứng dụng mẫu"
+      text_home: 'Đây là trang chủ của ứng dụng mẫu <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>.'
+      sign_up: "Đăng ký ngay!"
+    help:
+      title: "Trợ giúp"
+      text_help_1: 'Nhận trợ giúp về Ruby on Rails Tutorial tại <a href="http://www.railstutorial.org/help">trang trợ giúp Rails Tutorial</a>.'
+      text_help_2: 'Để nhận trợ giúp về ứng dụng mẫu này, xem <a href="http://www.railstutorial.org/book">sách <em>Ruby on RailsTutorial</em></a>.'
