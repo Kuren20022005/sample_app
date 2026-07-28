@@ -1,0 +1,7 @@
+user:
+  name:
+    maximum: 50
+
+  email:
+    maximum: 255
+    regex: '\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z'
