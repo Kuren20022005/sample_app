@@ -17,3 +17,12 @@ ja:
       title: "ヘルプ"
       text_help_1: 'Ruby on Rails Tutorialについてのヘルプは<a href="http://www.railstutorial.org/help">Rails Tutorial ヘルプページ</a>をご覧ください。'
       text_help_2: 'このサンプルアプリについてのヘルプは<a href="http://www.railstutorial.org/book">Ruby on Rails Tutorial 本</a>をご覧ください。'
+  users:
+    title: "ユーザー"
+    new:
+      title: "登録"
+      submit: "アカウント作成"
+      success: "サンプルアプリへようこそ！"
+    show:
+      title: "プロフィール"
+      warning: "ユーザーが見つかりません。"
