@@ -17,3 +17,12 @@ vi:
       title: "Trợ giúp"
       text_help_1: 'Nhận trợ giúp về Ruby on Rails Tutorial tại <a href="http://www.railstutorial.org/help">trang trợ giúp Rails Tutorial</a>.'
       text_help_2: 'Để nhận trợ giúp về ứng dụng mẫu này, xem <a href="http://www.railstutorial.org/book">sách <em>Ruby on RailsTutorial</em></a>.'
+  users:
+    title: "Người dùng"
+    new:
+      title: "Đăng ký"
+      submit: "Tạo tài khoản"
+      success: "Chào mừng đến với Ứng dụng mẫu!"
+    show:
+      title: "Hồ sơ"
+      warning: "Không tìm thấy người dùng!"
