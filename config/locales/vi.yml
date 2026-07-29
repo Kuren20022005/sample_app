@@ -7,6 +7,11 @@ vi:
       home: "Trang chủ"
       help: "Trợ giúp"
       log_in: "Đăng nhập"
+      users: "Người dùng"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
+      logout: "Đăng xuất"
   static_pages:
     home:
       title: "Trang Chủ"
@@ -17,6 +22,17 @@ vi:
       title: "Trợ giúp"
       text_help_1: 'Nhận trợ giúp về Ruby on Rails Tutorial tại <a href="http://www.railstutorial.org/help">trang trợ giúp Rails Tutorial</a>.'
       text_help_2: 'Để nhận trợ giúp về ứng dụng mẫu này, xem <a href="http://www.railstutorial.org/book">sách <em>Ruby on RailsTutorial</em></a>.'
+  session:
+    new:
+      title: "Đăng nhập"
+      email: "Email"
+      password: "Mật khẩu"
+      remember_me: "Ghi nhớ đăng nhập"
+      submit: "Đăng nhập"
+      new_user?: "Người dùng mới?"
+    create:
+      success: "Đăng nhập thành công!"
+      failure: "Kết hợp email/mật khẩu không hợp lệ"
   users:
     title: "Người dùng"
     new:

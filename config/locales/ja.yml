@@ -7,6 +7,11 @@ ja:
       home: "ホーム"
       help: "ヘルプ"
       log_in: "ログイン"
+      users: "ユーザー"
+      account: "アカウント"
+      profile: "プロフィール"
+      settings: "設定"
+      logout: "ログアウト"
   static_pages:
     home:
       title: "ホーム"
@@ -17,6 +22,17 @@ ja:
       title: "ヘルプ"
       text_help_1: 'Ruby on Rails Tutorialについてのヘルプは<a href="http://www.railstutorial.org/help">Rails Tutorial ヘルプページ</a>をご覧ください。'
       text_help_2: 'このサンプルアプリについてのヘルプは<a href="http://www.railstutorial.org/book">Ruby on Rails Tutorial 本</a>をご覧ください。'
+  session:
+    new:
+      title: "ログイン"
+      email: "メールアドレス"
+      password: "パスワード"
+      remember_me: "ログイン状態を保持する"
+      submit: "ログイン"
+      new_user?: "新規ユーザーですか？"
+    create:
+      success: "ログインに成功しました！"
+      failure: "無効なメールアドレス/パスワードの組み合わせです"
   users:
     title: "ユーザー"
     new:
