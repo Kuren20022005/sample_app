@@ -1,11 +1,14 @@
 class UsersController < ApplicationController
-  def show
-    @user = User.find_by id: params[:id]
-    return if @user
+  before_action :find_user, except: %i(index new create)
+  before_action :logged_in_user, except: %i(show new create)
+  before_action :correct_user, only: %i(edit update)
+  before_action :admin_user, only: :destroy
 
-    flash[:warning] = t("users.show.warning")
-    redirect_to root_path
+  def index
+    @pagy, @users = pagy User.ordered, items: Settings.per_page
   end
+
+  def show; end
 
   def new
     @user = User.new
@@ -23,7 +26,44 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit; end
+
+  def update
+    if @user.update user_params
+      flash[:success] = t("users.edit.success")
+      redirect_to @user
+    else
+      render :edit, status: :unprocessable_entity
+    end
+  end
+
+  def destroy
+    if @user.destroy
+      flash[:success] = t("users.destroy.success")
+    else
+      flash[:danger] = t("users.destroy.failure")
+    end
+    redirect_to users_path
+  end
+
   private
+
+  def find_user
+    @user = User.find_by id: params[:id]
+    return if @user
+
+    flash[:warning] = t("users.edit.warning")
+    redirect_to root_path
+  end
+
+  # Confirms the correct user.
+  def correct_user
+    return if current_user? @user
+
+    flash[:error] = t("users.edit.correct_user")
+    redirect_to root_url
+  end
+
   def user_params
     params.require(:user).permit(
       :name, :email, :password, :password_confirmation

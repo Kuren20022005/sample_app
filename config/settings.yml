@@ -1,3 +1,5 @@
+index:
+  per_page: 10
 user:
   name:
     maximum: 50
@@ -5,3 +7,6 @@ user:
   email:
     maximum: 255
     regex: '\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z'
+
+  password:
+    minimum: 6
