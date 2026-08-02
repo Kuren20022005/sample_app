@@ -10,3 +10,5 @@ user:
 
   password:
     minimum: 6
+mailer:
+  default_from: "noreply@gmail.com"

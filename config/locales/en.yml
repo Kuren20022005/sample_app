@@ -71,6 +71,7 @@ en:
       title: "Sign up"
       submit: "Create my account"
       success: "Welcome to the Sample App!"
+      info: "Please check your email to activate your account."
     edit:
       title: "Edit user"
       name: "Name"
@@ -90,3 +91,17 @@ en:
       success: "User deleted"
       failure: "Failed to delete user"
       confirm: "Are you sure?"
+  Mailer:
+    account_activation:
+      subject: "Account activation"
+      greeting: "Hi <%= @user.name %>,"
+      message: "Welcome to the Sample App! Click on the link below to activate your account:"
+    password_reset:
+      subject: "Password reset"
+      greeting: "Hi <%= @user.name %>,"
+      message: "To reset your password, click the link below:"
+  account_activations:
+    not_activated: "Account not activated. Check your email for the activation link."
+    edit:
+      success: "Account activated!"
+      failure: "Invalid activation link"
