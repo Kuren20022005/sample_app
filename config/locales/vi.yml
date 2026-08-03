@@ -39,6 +39,7 @@ vi:
       title: "Đăng ký"
       submit: "Tạo tài khoản"
       success: "Chào mừng đến với Ứng dụng mẫu!"
+      info: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản."
     edit:
       title: "Chỉnh sửa người dùng"
       name: "Tên"
@@ -58,3 +59,31 @@ vi:
       success: "Người dùng đã bị xóa"
       failure: "Xóa người dùng thất bại"
       confirm: "Bạn có chắc chắn muốn xóa không?"
+  Mailer:
+    account_activation:
+      subject: "Kích hoạt tài khoản"
+      greeting: "Xin chào <%= @user.name %>,"
+      message: "Chào mừng đến với Ứng dụng mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+    password_reset:
+      subject: "Đặt lại mật khẩu"
+      greeting: "Xin chào <%= @user.name %>,"
+      message_1: "Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết bên dưới:"
+      message_2: "Liên kết này sẽ hết hạn sau hai giờ. Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ không thay đổi."
+  account_activations:
+    not_activated: "Tài khoản chưa được kích hoạt. Vui lòng kiểm tra email của bạn để nhận liên kết kích hoạt."
+    edit:
+      success: "Tài khoản đã được kích hoạt!"
+      failure: "Liên kết kích hoạt không hợp lệ"
+  password_resets:
+    create:
+      info: "Đã gửi email. Vui lòng kiểm tra email của bạn để đặt lại mật khẩu."
+      danger: "Không tìm thấy địa chỉ email."
+    load_user:
+      danger: "Liên kết đặt lại mật khẩu không hợp lệ"
+    valid_user:
+      danger: "Không tìm thấy người dùng."
+    check_expiration:
+      danger: "Liên kết đặt lại mật khẩu đã hết hạn."
+    update:
+      empty: "Mật khẩu và xác nhận mật khẩu không được để trống"
+      success: "Mật khẩu đã được đặt lại."

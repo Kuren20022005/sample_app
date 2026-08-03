@@ -39,6 +39,7 @@ ja:
       title: "登録"
       submit: "アカウント作成"
       success: "サンプルアプリへようこそ！"
+      info: "アカウントを有効化するために、メールを確認してください。"
     edit:
       title: "ユーザー編集"
       name: "名前"
@@ -58,3 +59,31 @@ ja:
       success: "ユーザーを削除しました"
       failure: "ユーザーの削除に失敗しました"
       confirm: "本当に削除しますか？"
+  Mailer:
+    account_activation:
+      subject: "アカウント有効化"
+      greeting: "こんにちは <%= @user.name %>,"
+      message: "サンプルアプリへようこそ！下のリンクをクリックしてアカウントを有効化してください。"
+    password_reset:
+      subject: "パスワード再設定"
+      greeting: "こんにちは <%= @user.name %>,"
+      message_1: "パスワードを再設定するには、下のリンクをクリックしてください。"
+      message_2: "このリンクは2時間で期限が切れます。パスワードの再設定を希望しない場合は、このメールを無視してください。"
+  account_activations:
+    not_activated: "アカウントが有効化されていません。メールを確認して、有効化リンクをクリックしてください。"
+    edit:
+      success: "アカウントが有効化されました！"
+      failure: "無効な有効化リンクです"
+  password_resets:
+    create:
+      info: "メールを送信しました。メールを確認して、パスワードを再設定してください。"
+      danger: "メールアドレスが見つかりませんでした。"
+    valid_user:
+      danger: "無効なパスワード再設定リンクです"
+    load_user:
+      danger: "ユーザーが見つかりませんでした。"
+    check_expiration:
+      danger: "パスワード再設定の有効期限が切れています。"
+    update:
+      empty: "パスワードと確認用パスワードを入力してください。"
+      success: "パスワードが再設定されました。"

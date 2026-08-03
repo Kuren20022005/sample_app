@@ -10,3 +10,7 @@ user:
 
   password:
     minimum: 6
+mailer:
+  default_from: "noreply@gmail.com"
+  password_reset:
+    expired_time: 2.hours
