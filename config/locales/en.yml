@@ -71,6 +71,22 @@ en:
       title: "Sign up"
       submit: "Create my account"
       success: "Welcome to the Sample App!"
+    edit:
+      title: "Edit user"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirmation: "Confirmation"
+      submit: "Save changes"
+      change: "change"
+      warning: "Not found user!"
+      success: "Profile updated"
+      logged_in: "Please log in."
+      correct_user: "You cannot edit this account."
     show:
       title: "Profile"
       warning: "Not found user!"
+    destroy:
+      success: "User deleted"
+      failure: "Failed to delete user"
+      confirm: "Are you sure?"

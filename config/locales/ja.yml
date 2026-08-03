@@ -39,6 +39,22 @@ ja:
       title: "登録"
       submit: "アカウント作成"
       success: "サンプルアプリへようこそ！"
+    edit:
+      title: "ユーザー編集"
+      name: "名前"
+      email: "メールアドレス"
+      password: "パスワード"
+      confirmation: "確認"
+      submit: "変更を保存"
+      change: "変更"
+      warning: "ユーザーが見つかりません。"
+      success: "プロフィールを更新しました"
+      logged_in: "ログインしてください。"
+      correct_user: "このアカウントを編集することはできません。"
     show:
       title: "プロフィール"
       warning: "ユーザーが見つかりません。"
+    destroy:
+      success: "ユーザーを削除しました"
+      failure: "ユーザーの削除に失敗しました"
+      confirm: "本当に削除しますか？"

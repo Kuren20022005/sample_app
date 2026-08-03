@@ -39,6 +39,22 @@ vi:
       title: "Đăng ký"
       submit: "Tạo tài khoản"
       success: "Chào mừng đến với Ứng dụng mẫu!"
+    edit:
+      title: "Chỉnh sửa người dùng"
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận"
+      submit: "Lưu thay đổi"
+      change: "thay đổi"
+      warning: "Không tìm thấy người dùng!"
+      success: "Hồ sơ đã được cập nhật"
+      logged_in: "Vui lòng đăng nhập."
+      correct_user: "Bạn không thể chỉnh sửa tài khoản này."
     show:
       title: "Hồ sơ"
       warning: "Không tìm thấy người dùng!"
+    destroy:
+      success: "Người dùng đã bị xóa"
+      failure: "Xóa người dùng thất bại"
+      confirm: "Bạn có chắc chắn muốn xóa không?"
