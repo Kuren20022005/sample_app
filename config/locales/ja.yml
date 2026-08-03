@@ -67,9 +67,23 @@ ja:
     password_reset:
       subject: "パスワード再設定"
       greeting: "こんにちは <%= @user.name %>,"
-      message: "パスワードを再設定するには、下のリンクをクリックしてください。"
+      message_1: "パスワードを再設定するには、下のリンクをクリックしてください。"
+      message_2: "このリンクは2時間で期限が切れます。パスワードの再設定を希望しない場合は、このメールを無視してください。"
   account_activations:
     not_activated: "アカウントが有効化されていません。メールを確認して、有効化リンクをクリックしてください。"
     edit:
       success: "アカウントが有効化されました！"
       failure: "無効な有効化リンクです"
+  password_resets:
+    create:
+      info: "メールを送信しました。メールを確認して、パスワードを再設定してください。"
+      danger: "メールアドレスが見つかりませんでした。"
+    valid_user:
+      danger: "無効なパスワード再設定リンクです"
+    load_user:
+      danger: "ユーザーが見つかりませんでした。"
+    check_expiration:
+      danger: "パスワード再設定の有効期限が切れています。"
+    update:
+      empty: "パスワードと確認用パスワードを入力してください。"
+      success: "パスワードが再設定されました。"

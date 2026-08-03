@@ -1,7 +1,8 @@
 class User < ApplicationRecord
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
 
   before_save :downcase_email
+  before_create :create_activation_digest
   before_create :create_activation_digest
   scope :ordered, ->{order(created_at: :desc)}
 
@@ -52,6 +53,20 @@ class User < ApplicationRecord
   # Forgets a user.
   def forget
     update_column :remember_digest, nil
+  end
+
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_columns reset_digest: User.digest(reset_token),
+                   reset_sent_at: Time.zone.now
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+
+  def password_reset_expired?
+    reset_sent_at < Settings.mailer.password_reset.expired_time.ago
   end
 
   private
