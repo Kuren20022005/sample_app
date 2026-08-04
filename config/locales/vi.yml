@@ -18,6 +18,7 @@ vi:
       welcome: "Chào mừng đến với Ứng dụng mẫu"
       text_home: 'Đây là trang chủ của ứng dụng mẫu <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>.'
       sign_up: "Đăng ký ngay!"
+      feed: "Bảng tin"
     help:
       title: "Trợ giúp"
       text_help_1: 'Nhận trợ giúp về Ruby on Rails Tutorial tại <a href="http://www.railstutorial.org/help">trang trợ giúp Rails Tutorial</a>.'
@@ -55,6 +56,9 @@ vi:
     show:
       title: "Hồ sơ"
       warning: "Không tìm thấy người dùng!"
+      microposts:
+        count: "Bài viết (%{count})"
+        created_at: "Đăng %{time} trước"
     destroy:
       success: "Người dùng đã bị xóa"
       failure: "Xóa người dùng thất bại"
@@ -87,3 +91,23 @@ vi:
     update:
       empty: "Mật khẩu và xác nhận mật khẩu không được để trống"
       success: "Mật khẩu đã được đặt lại."
+  shared:
+    view_profile: "Xem hồ sơ của tôi"
+    micropost: "Vài viết"
+    post: "Đăng"
+    compose_micropost: "Soạn bài viết mới"
+    error_messages:
+      header: "Biểu mẫu có %{count} lỗi."
+  microposts:
+    create:
+      success: "Bài viết đã được tạo!"
+    destroy:
+      success: "Bài viết đã bị xóa"
+      failure: "Xóa bài viết thất bại"
+      invalid_format: "Định dạng hình ảnh không hợp lệ. Vui lòng tải lên tệp JPG, JPEG hoặc PNG."
+      invalid: "Bài viết không hợp lệ"
+      confirm: "Bạn có chắc chắn muốn xóa không?"
+      action: "Xóa"
+    image:
+      too_large: "Kích thước hình ảnh phải nhỏ hơn 5MB"
+      invalid_format: "Định dạng hình ảnh không hợp lệ. Vui lòng tải lên tệp JPG, JPEG hoặc PNG."

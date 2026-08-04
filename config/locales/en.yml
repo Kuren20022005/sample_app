@@ -50,6 +50,7 @@ en:
       welcome: "Welcome to the Sample App"
       text_home: 'This is the home page for the <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a> sample application.'
       sign_up: "Sign up now!"
+      feed: "Feed"
     help:
       title: "Help"
       text_help_1: 'Get help on the Ruby on Rails Tutorial at the <a href="http://www.railstutorial.org/help">Rails Tutorialhelp page</a>.'
@@ -87,6 +88,9 @@ en:
     show:
       title: "Profile"
       warning: "Not found user!"
+      microposts:
+        count: "Microposts (%{count})"
+        created_at: "Posted %{time} ago"
     destroy:
       success: "User deleted"
       failure: "Failed to delete user"
@@ -119,3 +123,22 @@ en:
     update:
       empty: "Password and confirmation can't be empty"
       success: "Password has been reset."
+  shared:
+    view_profile: "View my profile"
+    micropost: "Micropost"
+    post: "Post"
+    compose_micropost: "Compose new micropost..."
+    error_messages:
+      header: "The form contains %{count} errors."
+  microposts:
+    create:
+      success: "Micropost created!"
+    destroy:
+      success: "Micropost deleted"
+      failure: "Failed to delete micropost"
+      confirm: "Are you sure?"
+      invalid: "Micropost invalid"
+      action: "Delete"
+    image:
+      too_large: "Image size should be less than 5MB"
+      invalid_format: "Invalid image format. Please upload a JPG, JPEG, or PNG file."
