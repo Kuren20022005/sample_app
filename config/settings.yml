@@ -1,6 +1,8 @@
 index:
   per_page: 10
 user:
+  avatar:
+    size: 50
   name:
     maximum: 50
 
@@ -10,7 +12,19 @@ user:
 
   password:
     minimum: 6
+static_pages:
+  home:
+    maximum: 10
 mailer:
   default_from: "noreply@gmail.com"
   password_reset:
     expired_time: 2.hours
+micropost:
+  content:
+    maximum: 140
+  image:
+    content_types: ["image/jpg", "image/jpeg", "image/png"]
+    accept: "image/jpeg,image/gif,image/png"
+    display:
+      resize: [500, 500]
+    max_size: 5
