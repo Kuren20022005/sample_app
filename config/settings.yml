@@ -3,6 +3,7 @@ index:
 user:
   avatar:
     size: 50
+    show_follow_size: 30
   name:
     maximum: 50
 
@@ -12,6 +13,10 @@ user:
 
   password:
     minimum: 6
+
+  follow:
+    show:
+      size: 10
 static_pages:
   home:
     maximum: 10

@@ -55,6 +55,9 @@ en:
       title: "Help"
       text_help_1: 'Get help on the Ruby on Rails Tutorial at the <a href="http://www.railstutorial.org/help">Rails Tutorialhelp page</a>.'
       text_help_2: 'To get help on this sample app, see the <a href="http://www.railstutorial.org/book"><em>Ruby on RailsTutorial</em>book</a>.'
+    stats:
+      followers: "Followers"
+      following: "Following"
   session:
     new:
       title: "Log in"
@@ -95,6 +98,16 @@ en:
       success: "User deleted"
       failure: "Failed to delete user"
       confirm: "Are you sure?"
+    relation:
+      follow: "Follow"
+      unfollow: "Unfollow"
+      following:
+        title: "Following"
+      followers:
+        title: "Followers"
+      not_found: "Not found relationship!"
+    microposts:
+      count: "Microposts (%{count})"
   Mailer:
     account_activation:
       subject: "Account activation"
