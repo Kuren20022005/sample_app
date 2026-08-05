@@ -1,7 +1,8 @@
 class Micropost < ApplicationRecord
   belongs_to :user
   has_one_attached :image do |attachable|
-    attachable.variant :display, resize_to_limit: Settings.micropost.image.display.resize
+    attachable.variant :display,
+                       resize_to_limit: Settings.micropost.image.display.resize
   end
   validates :content, presence: true,
                       length: {maximum: Settings.micropost.content.maximum}
@@ -16,4 +17,5 @@ class Micropost < ApplicationRecord
               message: I18n.t("microposts.image.too_large")
             }
   scope :newest, ->{order(created_at: :desc)}
+  scope :relate_post, ->(user_ids){where(user_id: user_ids)}
 end

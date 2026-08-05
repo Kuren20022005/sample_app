@@ -23,6 +23,9 @@ vi:
       title: "Trợ giúp"
       text_help_1: 'Nhận trợ giúp về Ruby on Rails Tutorial tại <a href="http://www.railstutorial.org/help">trang trợ giúp Rails Tutorial</a>.'
       text_help_2: 'Để nhận trợ giúp về ứng dụng mẫu này, xem <a href="http://www.railstutorial.org/book">sách <em>Ruby on RailsTutorial</em></a>.'
+    stats:
+      followers: "Người theo dõi"
+      following: "Đang theo dõi"
   session:
     new:
       title: "Đăng nhập"
@@ -63,6 +66,16 @@ vi:
       success: "Người dùng đã bị xóa"
       failure: "Xóa người dùng thất bại"
       confirm: "Bạn có chắc chắn muốn xóa không?"
+    relation:
+      follow: "Theo dõi"
+      unfollow: "Bỏ theo dõi"
+      following:
+        title: "Đang theo dõi"
+      followers:
+        title: "Người theo dõi"
+      not_found: "Không tìm thấy mối quan hệ!"
+    microposts:
+      count: "Bài viết (%{count})"
   Mailer:
     account_activation:
       subject: "Kích hoạt tài khoản"

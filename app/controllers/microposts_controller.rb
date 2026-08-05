@@ -4,15 +4,10 @@ class MicropostsController < ApplicationController
 
   def create
     @micropost = current_user.microposts.build(micropost_params)
-    @micropost.image.attach params.dig(:micropost, :image)
-    if @micropost.save
-      flash[:success] = t("microposts.create.success")
-      return redirect_to root_url
-    end
+    attach_image
+    return redirect_after_create if @micropost.save
 
-    @pagy, @feed_items = pagy(current_user.feed,
-                              items: Settings.micropost.content.maximum)
-    render "static_pages/home", status: :unprocessable_entity
+    render_create_failure
   end
 
   def destroy
@@ -36,5 +31,20 @@ class MicropostsController < ApplicationController
 
   def micropost_params
     params.require(:micropost).permit :content, :image
+  end
+
+  def attach_image
+    @micropost.image.attach params.dig(:micropost, :image)
+  end
+
+  def redirect_after_create
+    flash[:success] = t("microposts.create.success")
+    redirect_to root_url
+  end
+
+  def render_create_failure
+    @pagy, @feed_items = pagy(current_user.feed,
+                              items: Settings.micropost.content.maximum)
+    render "static_pages/home", status: :unprocessable_entity
   end
 end

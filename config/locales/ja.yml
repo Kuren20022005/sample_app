@@ -23,6 +23,9 @@ ja:
       title: "ヘルプ"
       text_help_1: 'Ruby on Rails Tutorialについてのヘルプは<a href="http://www.railstutorial.org/help">Rails Tutorial ヘルプページ</a>をご覧ください。'
       text_help_2: 'このサンプルアプリについてのヘルプは<a href="http://www.railstutorial.org/book">Ruby on Rails Tutorial 本</a>をご覧ください。'
+    stats:
+      followers: "フォロワー"
+      following: "フォロー中"
   session:
     new:
       title: "ログイン"
@@ -63,6 +66,16 @@ ja:
       success: "ユーザーを削除しました"
       failure: "ユーザーの削除に失敗しました"
       confirm: "本当に削除しますか？"
+    relation:
+      follow: "フォローする"
+      unfollow: "フォローを解除する"
+      following:
+        title: "フォロー中"
+      followers:
+        title: "フォロワー"
+      not_found: "リレーションが見つかりません。"
+    microposts:
+      count: "投稿 (%{count})"
   Mailer:
     account_activation:
       subject: "アカウント有効化"

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :find_user, except: %i(index new create)
-  before_action :logged_in_user, except: %i(show new create)
+  before_action :logged_in_user, except: %i(index new create)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
@@ -9,6 +9,9 @@ class UsersController < ApplicationController
   end
 
   def show
+    @relationship = current_user.active_relationships.find_by(
+      followed_id: @user.id
+    )
     @page, @microposts = pagy @user.microposts, items: Settings.per_page
   end
 
@@ -45,6 +48,18 @@ class UsersController < ApplicationController
       flash[:danger] = t("users.destroy.failure")
     end
     redirect_to users_path
+  end
+
+  def following
+    @title = t("users.relation.following.title")
+    @pagy, @users = pagy @user.following, items: Settings.user.follow.show.size
+    render :show_follow
+  end
+
+  def followers
+    @title = t("users.relation.followers.title")
+    @pagy, @users = pagy @user.followers, items: Settings.user.follow.show.size
+    render :show_follow
   end
 
   private
